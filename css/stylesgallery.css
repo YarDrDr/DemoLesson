@@ -1,0 +1,86 @@
+.backbutton {
+    margin: 30px;
+    position: fixed;
+    width: 65px;
+    height: 1.3em;
+    background-color: black;
+    text-align: center;
+    padding-top: 1px;
+    border-radius: 10px;
+    /* border-style: solid;
+    border-color: aliceblue; */
+    border: 2px solid aliceblue;
+    /* border-width: 2px; */
+    box-shadow: 5px 5px 5px black;
+}
+
+.backbutton:hover {
+    border-color: rgb(255, 59, 59);
+    border-style: dotted;
+}
+
+.backbutton a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.backbutton a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.backbutton a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.backbutton a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #EBE7E7;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+#gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    #gallery img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    #gallery img {
+        width: 100%;
+    }
+}
