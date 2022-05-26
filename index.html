@@ -59,6 +59,11 @@
                 <nav class="navigate">
                     <a class="naviref" href="index.html">Home</a>
                     <a class="naviref" href="contacts.html">Contacts</a>
+                    <a class="naviref" href="doctor.html">Doctor</a>
+                    <a class="naviref" href="form.html">Form</a>
+                    <a class="naviref" href="trombon.html">Trobon</a>
+                    <a class="naviref" href="documentation.html">Doc</a>
+                    <a class="naviref" href="portfolio.html">Portfolio</a>
                 </nav>
                 <h2 class="namelogo">Lorem ipsum dolor sit amet consectetur.</h2>
             </div>
@@ -81,14 +86,20 @@
                 <div class="maincolumn">
                     <h2 class="red-text">CatPhotoApp</h2>
                     <main>
-                        <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+                        <p class="red-text">
+                            Click here to view more <a href="#adressa">cat photos</a>.
+                        </p>
 
-                        <a href="#"
+                        <a href="#adressa"
                             ><img
                                 class="smaller-image thick-green-border"
                                 src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
                                 alt="A cute orange cat lying on its back."
                         /></a>
+
+                        <!-- Heart -->
+                        <div class="back"></div>
+                        <div class="heart"></div>
 
                         <div>
                             <p>Things cats love:</p>
@@ -120,15 +131,37 @@
                             <input type="text" placeholder="cat photo URL" required />
                             <button type="submit">Submit</button>
                         </form>
+                        <section>
+                            <h2>Mortal Kombat Tournament Survey</h2>
+                            <form>
+                                <p>Tell us the best date for the competition</p>
+                                <label for="pickdate">Preferred Date:</label>
+                                <input type="date" id="pickdate" name="date" />
+                                <!-- Змініть код лише під цим рядком -->
+
+                                <!-- Змініть код лише над цим рядком -->
+
+                                <input type="submit" name="submit" value="Submit" />
+                            </form>
+                        </section>
                     </main>
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="item1">header</div>
+            <div class="item2">advert</div>
+            <div class="item3">
+                <div class="itemOne">paragraph1</div>
+                <div class="itemTwo">paragraph2</div>
+            </div>
+            <div class="item4">footer</div>
+        </div>
         <script src="./js/index.js"></script>
+        <footer>
+            <span id="adressa">Адрес:</span>
+            <address>Харьков, пр. Московский 228</address>
+            <time>10:00</time>
+        </footer>
     </body>
-    <footer>
-        <span>Адрес:</span>
-        <address>Харьков, пр. Московский 228</address>
-        <time>10:00</time>
-    </footer>
 </html>

@@ -65,15 +65,6 @@
 // console.log(b, c, d);
 
 
-// const atTheOldToad = {
-//   potions: [
-//     { name: "Speed potion", price: 460 },
-//     { name: "Dragon breath", price: 780 },
-//     { name: "Stone skin", price: 520 },
-//   ],
-// }
-// console.log(atTheOldToad.potions[0]);
-
 const atTheOldToad = {
   potions: [
     { name: "Speed potion", price: 460 },
@@ -120,4 +111,6 @@ console.table(atTheOldToad.getPotions());
 atTheOldToad.addPotion({ name: "Invisibility", price: 620 });
 atTheOldToad.addPotion({ name: "Power potion", price: 270 });
 atTheOldToad.addPotion({ name: "Dragon breath", price: 700 });
+atTheOldToad.updatePotionName("Dragon breath", "Polymorth");
+atTheOldToad.updatePotionName("Invisibility", "Invulnerability potion")
 console.table(atTheOldToad.getPotions());
