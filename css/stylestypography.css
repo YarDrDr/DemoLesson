@@ -1,0 +1,242 @@
+.backbutton {
+    margin: 20px 20px;
+    position: fixed;
+    width: 70px;
+    height: 1.1rem;
+    background-color: black;
+    text-align: center;
+    padding-top:0;
+    /* padding-bottom: 2px; */
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+    box-shadow: 5px 5px 5px black;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+.backbutton:hover {
+    border-color: rgb(255, 59, 59);
+    border-style: dotted;
+}
+
+.backbutton a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.backbutton a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.backbutton a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.backbutton a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+
+*:not(.backbutton) {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px 0 20px 200px;
+    padding: 0 7px;
+}
+
+header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px
+}
+
+p {
+    margin: 0;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+    clear: right;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.right {
+    float: right;
+}
+
+.lg {
+    height: 10px;
+}
+
+.lg,
+.md {
+    background-color: black;
+    border: 0;
+}
+
+.md {
+    height: 5px;
+}
+
+.sm-text {
+    font-size: 0.85rem;
+}
+
+.calories-info h1 {
+    margin: -5px -2px;
+    overflow: hidden;
+}
+
+.calories-info span {
+    font-size: 1.2em;
+    margin-top: -7px;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.dbl-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+}
+
+
+
+
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 650px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
+.cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    animation: cabins 10s linear infinite;
+}
+
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
